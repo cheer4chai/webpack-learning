@@ -1,0 +1,1 @@
+document.write('<h2>test webpack1.1</h2>')

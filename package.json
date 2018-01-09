@@ -1,0 +1,29 @@
+{
+    "name": "webpack-learning",
+    "version": "1.0.0",
+    "description": "test webpack",
+    "main": "index.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cheer4chai/webpack-learning.git"
+    },
+    "keywords": [
+        "webpack"
+    ],
+    "author": "cheer4chai",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/cheer4chai/webpack-learning/issues"
+    },
+    "homepage": "https://github.com/cheer4chai/webpack-learning#readme",
+    "dependencies": {
+        "css-loader": "^0.28.8",
+        "less": "^2.7.3",
+        "less-loader": "^4.0.5",
+        "style-loader": "^0.19.1",
+        "webpack-dev-server": "1.5"
+    }
+}
