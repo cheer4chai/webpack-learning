@@ -1,18 +1,19 @@
 let path = require('path')
 let webpack = require('webpack');
-
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/entry.js',
     devtool: 'inline-source-map',
     output: {
-        path: path.join(__dirname, '/dist'),
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/dist/'
+        publicPath: '/'
     },
     devServer: {
-        contentBase: path.join(__dirname, "./"),
         hot: true,
+        compress: true,
+        publicPath: '/'
     },
     module: {
         loaders: [{
@@ -26,6 +27,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(), // 热加载
+        new HtmlWebpackPlugin(),
     ]
 }
