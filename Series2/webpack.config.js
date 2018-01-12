@@ -24,8 +24,5 @@ module.exports = {
                 loader: "style-loader!css-loader!less-loader"
             }
         ]
-    },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ]
+    }
 }

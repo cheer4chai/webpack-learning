@@ -6,6 +6,10 @@ const baseWebpackConfig = require('./webpack.base.config')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(baseWebpackConfig, {
+    entry: {
+        index: './src/main.js',
+        vendor: ['jquery', 'vue']
+    },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: path.join('static', 'js/[name].[chunkhash].js'),
@@ -34,6 +38,6 @@ module.exports = merge(baseWebpackConfig, {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'ventor',
             minChunks: Infinity
-        }),
+        })
     ]
 })

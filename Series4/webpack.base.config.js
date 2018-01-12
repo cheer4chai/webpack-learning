@@ -1,7 +1,9 @@
 let path = require('path')
 
 module.exports = {
-    entry: './src/main.js',
+    entry: {
+        index: './src/main.js'
+    },
     devtool: 'inline-source-map',
     output: {
         path: path.join(__dirname, 'dist'),

@@ -14,6 +14,6 @@ module.exports = merge(baseWebpackConfig, {
 
     plugins: [
         new webpack.HotModuleReplacementPlugin(), // 热加载
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin()
     ]
 })
