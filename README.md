@@ -1,5 +1,5 @@
 
-# 从零开始开发一个简易的vue-cli构建工具
+# 从零开始开发一个简易的类vue-cli构建工具
 
 ``` bash
 
@@ -232,3 +232,25 @@ $ webpack-dev-server --inline --config webpack.dev.config.js
 prod:
 $ webpack --config webpack.build.config.js
 ```
+
+
+### Series4
+
+1.引用vue-loader将vue文件进行编译
+
+2.设置resolve以支持template选项
+
+```bash
+$ cd Series4
+dev:
+$ webpack-dev-server --inline --config webpack.dev.config.js
+prod:
+$ webpack --config webpack.build.config.js
+```
+
+
+## 未完成
+
+1.设置vue文件中样式的编译，通过阅读vue-loader的文档得知可以通过设置其loader解决此问题
+2.prod模式构建文件的优化，例如引用productionGzip、bundleAnalyzerReport等插件，因为时间有限，暂时不一一去研究了，可以通过比对vue-cli文档了解详情
+3.目录优化，可以将一些设置丢到config文件中去，再在文档中加以区分
