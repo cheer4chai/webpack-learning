@@ -21,6 +21,14 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             }, {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: path.resolve(__dirname, "./node_modules"),
+                include: path.resolve(__dirname, "./src"),
+                query: {
+                    presets: ['es2015']
+                }
+            }, {
                 test: /\.css$/,
                 loader: "style-loader!css-loader"
             },

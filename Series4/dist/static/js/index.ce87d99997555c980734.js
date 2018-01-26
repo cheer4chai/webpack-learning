@@ -1,0 +1,1 @@
+webpackJsonp([0],{6:function(e,d,u){"use strict";var n=u(0),p=function(e){return e&&e.__esModule?e:{default:e}}(n);document.body.append("123"),(0,p.default)("body").append("<p>jquery add success!</p>")}},[6]);

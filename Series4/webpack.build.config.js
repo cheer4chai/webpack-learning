@@ -13,7 +13,7 @@ module.exports = merge(baseWebpackConfig, {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: path.join('static', 'js/[name].[chunkhash].js'),
-        chunkFilename: path.join('static', 'js/[id].[chunkhash].js')
+        chunkFilename: path.join('static', 'js/[name].[chunkhash].js')
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
@@ -36,7 +36,7 @@ module.exports = merge(baseWebpackConfig, {
             },
         }),
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'ventor',
+            name: 'vendor',
             minChunks: Infinity
         })
     ]

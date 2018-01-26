@@ -1,1 +1,0 @@
-webpackJsonp([1,2],{6:function(n,o){document.body.append("123")}},[6]);
